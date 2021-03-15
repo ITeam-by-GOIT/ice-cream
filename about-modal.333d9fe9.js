@@ -117,26 +117,20 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/gallary.js":[function(require,module,exports) {
-$grid = $('.grid').masonry({
-  itemSelector: '.grid__item',
-  columnWidth: 140,
-  gutter: 6,
-  isFitWidth: true // stamp: '.stamp'
+})({"js/about-modal.js":[function(require,module,exports) {
+(function () {
+  var refs = {
+    openModalBtn: document.querySelector('[data-about-modal-open]'),
+    closeModalBtn: document.querySelector('[data-about-modal-close]'),
+    modal: document.querySelector('[data-about-modal]')
+  };
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
 
-});
-$grid.on('mouseover', '.grid__item', function () {
-  // change size of item via class
-  $(this).toggleClass('grid__item--gigante'); // trigger layout
-
-  $grid.masonry();
-});
-$grid.on('mouseleave', '.grid__item', function () {
-  // change size of item via class
-  $(this).removeClass('grid__item--gigante'); // trigger layout
-
-  $grid.masonry();
-});
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -341,5 +335,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/gallary.js"], null)
-//# sourceMappingURL=/gallary.f0bf66e9.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/about-modal.js"], null)
+//# sourceMappingURL=/about-modal.333d9fe9.js.map

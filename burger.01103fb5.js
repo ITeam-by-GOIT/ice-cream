@@ -117,25 +117,25 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/gallary.js":[function(require,module,exports) {
-$grid = $('.grid').masonry({
-  itemSelector: '.grid__item',
-  columnWidth: 140,
-  gutter: 6,
-  isFitWidth: true // stamp: '.stamp'
+})({"js/burger.js":[function(require,module,exports) {
+var btn = document.getElementById('menu-toggle');
+var lines = btn.querySelectorAll('.line');
+var cls = {
+  open: 'open',
+  close: 'close'
+};
+var btnClass = cls.open;
+btn.addEventListener('click', function () {
+  if (btn.classList.contains(cls.open)) {
+    btn.classList.remove(btnClass);
+    btnClass = cls.close;
+  } else if (btn.classList.contains(cls.close)) {
+    btn.classList.remove(btnClass);
+    btnClass = cls.open;
+  }
 
-});
-$grid.on('mouseover', '.grid__item', function () {
-  // change size of item via class
-  $(this).toggleClass('grid__item--gigante'); // trigger layout
-
-  $grid.masonry();
-});
-$grid.on('mouseleave', '.grid__item', function () {
-  // change size of item via class
-  $(this).removeClass('grid__item--gigante'); // trigger layout
-
-  $grid.masonry();
+  void btn.offsetWidth;
+  btn.classList.add(btnClass);
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -341,5 +341,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/gallary.js"], null)
-//# sourceMappingURL=/gallary.f0bf66e9.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/burger.js"], null)
+//# sourceMappingURL=/burger.01103fb5.js.map

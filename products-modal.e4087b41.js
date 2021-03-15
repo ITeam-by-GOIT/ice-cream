@@ -117,26 +117,48 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/gallary.js":[function(require,module,exports) {
-$grid = $('.grid').masonry({
-  itemSelector: '.grid__item',
-  columnWidth: 140,
-  gutter: 6,
-  isFitWidth: true // stamp: '.stamp'
+})({"js/products-modal.js":[function(require,module,exports) {
+(function () {
+  var refs = {
+    openModalBtn: document.querySelector('[data-modal-ice-cream-open]'),
+    closeModalBtn: document.querySelector('[data-modal-ice-cream-close]'),
+    modal: document.querySelector('[data-modal-ice-cream]')
+  };
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
 
-});
-$grid.on('mouseover', '.grid__item', function () {
-  // change size of item via class
-  $(this).toggleClass('grid__item--gigante'); // trigger layout
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
 
-  $grid.masonry();
-});
-$grid.on('mouseleave', '.grid__item', function () {
-  // change size of item via class
-  $(this).removeClass('grid__item--gigante'); // trigger layout
+(function () {
+  var refs = {
+    openModalBtn: document.querySelector('[data-modal-ice-coffee-open]'),
+    closeModalBtn: document.querySelector('[data-modal-ice-coffee-close]'),
+    modal: document.querySelector('[data-modal-ice-coffee]')
+  };
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
 
-  $grid.masonry();
-});
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
+
+(function () {
+  var refs = {
+    openModalBtn: document.querySelector('[data-modal-milkshakes-open]'),
+    closeModalBtn: document.querySelector('[data-modal-milkshakes-close]'),
+    modal: document.querySelector('[data-modal-milkshakes]')
+  };
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+  }
+})();
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -341,5 +363,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/gallary.js"], null)
-//# sourceMappingURL=/gallary.f0bf66e9.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/products-modal.js"], null)
+//# sourceMappingURL=/products-modal.e4087b41.js.map
