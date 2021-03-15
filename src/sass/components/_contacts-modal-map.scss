@@ -6,11 +6,16 @@
   width: 100vw;
   height: 100vh;
   background: var(--color-design-white);
-  padding: 45px 10px 20px;
+  padding: 45px 5px 20px;
 
   @media screen and (min-width: 768px) {
       width: 90vw;
       height: 90vh;
+  }
+
+  @media screen and (min-width: 1280px) {
+      width: 60vw;
+      height: 65vh;
   }
   
 }
