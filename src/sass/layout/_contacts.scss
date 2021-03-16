@@ -241,8 +241,6 @@
   &-dark,
   &-light {
     font-size: 16px;
-    display: flex;
-    align-items: center;
     justify-content: center;
     border-radius: 22px;
     width: 161px;
@@ -253,13 +251,6 @@
 
   &-dark {
     fill: var(--bg-btn-light);
-
-    &:hover,
-    &:focus {
-      fill: var(--bg-btn-light-hover);
-      color: var(--bg-btn-light-hover);
-      background: var(--bg-btn-dark-hover);
-    }
 
     @media screen and (min-width: 768px) {
       padding: 0 34px;
@@ -274,13 +265,6 @@
 
   &-light {
     fill: var(--bg-btn-dark);
-
-    &:hover,
-    &:focus {
-      fill: var(--bg-btn-dark-hover);
-      color: var(--bg-btn-dark-hover);
-      background: var(--bg-btn-light-hover);
-    }
 
     @media screen and (min-width: 768px) {
       padding: 0 41px;
