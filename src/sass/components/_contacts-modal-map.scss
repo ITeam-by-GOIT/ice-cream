@@ -23,29 +23,37 @@
   }
   
 }
-.modal__close {
+.contacts__modal-close.btn-dark {
   position: absolute;
-  top: 5px;
-  right: 10px;
-  padding: 8px 13px;
-  background: var(--color-line-in-contacts);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  border: 1px solid transparent;
-  cursor: pointer;
+    top: 8px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 30px;
+    height: 30px;
+    border-color: transparent;
+    border-radius: 50%;
+    background-color: var(--color-design-white);
+    transition: background-color 250ms linear;
 
   &:hover,
   &:focus {
-    background: var(--bg-social);
-    fill: var(--bg-btn-light);
+    background-color: var(--bg-btn-dark);
   }
 }
 
-.modal__close-svg {
-  width: 8px;
-  height: 12px;
+.contacts__modal-map-svg {
+  width: 14px;
+  height: 14px;
+  fill: var(--bg-btn-dark);
+  transition: fill 250ms linear;
+
+  .contacts__modal-close.btn-dark:hover &,
+  .contacts__modal-close.btn-dark:focus & {
+    fill: var(--bg-btn-light);
+  }
 }
 .iframe {
     width: 100%;
