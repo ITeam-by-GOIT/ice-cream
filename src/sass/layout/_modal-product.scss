@@ -5,6 +5,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   overflow: scroll;
+  max-height: 95vh;
 
   padding: 25px;
   background-color: var(--color-design-white);
@@ -54,9 +55,10 @@
   }
 }
 .modal__title.section-subtitle {
+  position: relative;
   color: var(--color-design-main);
   font-size: 26px;
-  padding-bottom: 180px;
+  padding-bottom: 160px;
   margin-bottom: 0;
 
   @media screen and(min-width:480px) {
@@ -78,7 +80,7 @@
   display: block;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -95%);
+  transform: translate(-50%, -40%);
   background-image: url('../images/products/mob/products-ice-cream-mob.png');
   background-size: cover;
   background-position: center;
@@ -104,7 +106,7 @@
   @media screen and(min-width:768px) {
     width: 220px;
     height: 226px;
-    transform: translate(-50%, -75%);
+    transform: translate(-50%, -50%);
     background-image: url('../images/products/tablet/products-ice-cream-tablet.png');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -117,7 +119,6 @@
   @media screen and(min-width:1280px) {
     width: 220px;
     height: 220px;
-    transform: translate(-50%, -70%);
     background-image: url('../images/products/desktop/products-ice-cream-desktop.png');
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -136,7 +137,7 @@
   display: block;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -95%);
+  transform: translate(-50%, -45%);
   background-image: url('../images/products/mob/products-ice-coffe-mob.png');
   background-size: cover;
   background-position: center;
@@ -162,7 +163,7 @@
   @media screen and(min-width:768px) {
     width: 220px;
     height: 226px;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, -50%);
     background-image: url('../images/products/tablet/products-ice-coffe-tablet.png');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -175,7 +176,7 @@
   @media screen and(min-width:1280px) {
     width: 220px;
     height: 220px;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, -50%);
     background-image: url('../images/products/desktop/products-ice-coffe-desktop.png');
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -194,7 +195,7 @@
   display: block;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -80%);
+  transform: translate(-50%, -35%);
   background-image: url('../images/products/mob/products-milkshakes-mob.png');
   background-size: cover;
   background-position: center;
@@ -220,7 +221,7 @@
   @media screen and(min-width:768px) {
     width: 220px;
     height: 226px;
-    transform: translate(-50%, -60%);
+    transform: translate(-50%, -45%);
     background-image: url('../images/products/tablet/products-milkshakes-tablet.png');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -233,7 +234,7 @@
   @media screen and(min-width:1280px) {
     width: 220px;
     height: 220px;
-    transform: translate(-50%, -70%);
+    transform: translate(-50%, -45%);
     background-image: url('../images/products/desktop/products-milkshakes-desktop.png');
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
