@@ -120,22 +120,20 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"js/gallary.js":[function(require,module,exports) {
 $grid = $('.grid').masonry({
   itemSelector: '.grid__item',
-  columnWidth: 140,
+  columnWidth: 120,
   gutter: 6,
-  isFitWidth: true // stamp: '.stamp'
-
+  isFitWidth: true,
+  stamp: '.stamp'
 });
 $grid.on('mouseover', '.grid__item', function () {
   // change size of item via class
   $(this).toggleClass('grid__item--gigante'); // trigger layout
-
-  $grid.masonry();
+  // $grid.masonry();
 });
 $grid.on('mouseleave', '.grid__item', function () {
   // change size of item via class
   $(this).removeClass('grid__item--gigante'); // trigger layout
-
-  $grid.masonry();
+  // $grid.masonry();
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -165,7 +163,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62568" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52682" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
