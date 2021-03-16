@@ -130,6 +130,12 @@
   }
 }
 
+.header-button.is-hidden {
+  margin-left: auto;
+
+  transition: all 250ms linear;
+}
+
 .header-button__caption {
   margin-right: 10px;
 }
