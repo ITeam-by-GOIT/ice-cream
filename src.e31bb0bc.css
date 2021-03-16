@@ -2511,7 +2511,7 @@ body {
   right: 0;
   width: 250px;
   height: 100%;
-  overflow-x: scroll;
+  overflow: auto;
   background-color: var(--bg-mobile-menu);
   transform: translateX(220%);
   opacity: 0;
@@ -2598,7 +2598,7 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  overflow: scroll;
+  overflow: auto;
   max-height: 95vh;
   padding: 25px;
   background-color: var(--color-design-white);
@@ -3123,7 +3123,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: scroll;
+  overflow: auto;
 }
 @media screen and (min-width: 480px) {
   .about-modal__field {
