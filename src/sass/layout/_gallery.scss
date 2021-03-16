@@ -8,11 +8,6 @@
 /* ---- grid ---- */
 
 .grid {
-  /* ----временно отключили, чтобы не ломался мобайл, пока не разберемся---- */
-  @media screen and (max-width: 479px) {
-    display: none;
-  }
-
   display: block;
   margin: 0 auto;
   @media screen and (max-width: 340px) {
