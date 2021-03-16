@@ -6,21 +6,24 @@
     width: 80vw;
     max-width: 320px;
     height: 90vh;
+    max-height: 450px;
     background: var(--color-design-white);
     padding: 35px 25px 20px 25px;
     display: block;
     border-radius: 12px;
-    overflow: scroll;
+    overflow-y: scroll;
 
     @media screen and (min-width: 480px) {
       width: 400px;
       height: 90vh;
+      max-height: 550px;
   }
 
   @media screen and (min-width: 768px) {
       width: 80vw;
       max-width: 500px;
       height: 80vh;
+      max-height: 600px;
   }
 
   @media screen and (min-width: 1280px) {
