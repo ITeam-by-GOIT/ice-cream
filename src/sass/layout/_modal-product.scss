@@ -1,10 +1,10 @@
 .modal {
   position: absolute;
   width: 90%;
-  height: 500px;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  overflow: scroll;
 
   padding: 25px;
   background-color: var(--color-design-white);
@@ -14,15 +14,15 @@
   border-radius: 24px;
 
   @media screen and(min-width:480px) {
-    width: 440px;
+    width: 90%;
     padding-left: 30px;
     padding-right: 30px;
   }
   @media screen and(min-width:768px) {
-    width: 600px;
+    width: 80%;
   }
   @media screen and(min-width:1280px) {
-    width: 680px;
+    width: 50%;
   }
 }
 .modal-close-btn {
@@ -162,7 +162,7 @@
   @media screen and(min-width:768px) {
     width: 220px;
     height: 226px;
-    transform: translate(-50%, -75%);
+    transform: translate(-50%, -70%);
     background-image: url('../images/products/tablet/products-ice-coffe-tablet.png');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -194,7 +194,7 @@
   display: block;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -95%);
+  transform: translate(-50%, -80%);
   background-image: url('../images/products/mob/products-milkshakes-mob.png');
   background-size: cover;
   background-position: center;
@@ -220,7 +220,7 @@
   @media screen and(min-width:768px) {
     width: 220px;
     height: 226px;
-    transform: translate(-50%, -75%);
+    transform: translate(-50%, -60%);
     background-image: url('../images/products/tablet/products-milkshakes-tablet.png');
 
     @media screen and (min-device-pixel-ratio: 2),
@@ -272,11 +272,5 @@
   margin: 0 auto;
   padding: 10px;
   border-radius: 20px;
-  text-align: center;
-  transition: background-color 250ms linear;
-
-  &:hover,
-  &:focus {
-    background-color: var(--bg-btn-dark-hover);
-  }
+  font-size: 16px;
 }
