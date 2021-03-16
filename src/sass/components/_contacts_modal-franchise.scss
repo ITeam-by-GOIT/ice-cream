@@ -5,21 +5,22 @@
     transform: translate(-50%, -50%);
     width: 80vw;
     max-width: 320px;
-    height: 500px;
+    height: 90vh;
     background: var(--color-design-white);
     padding: 35px 25px 20px 25px;
     display: block;
     border-radius: 12px;
+    overflow: scroll;
 
     @media screen and (min-width: 480px) {
       width: 400px;
-      height: 550px;
+      height: 90vh;
   }
 
   @media screen and (min-width: 768px) {
       width: 80vw;
       max-width: 500px;
-      height: 600px;
+      height: 80vh;
   }
 
   @media screen and (min-width: 1280px) {
