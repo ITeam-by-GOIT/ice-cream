@@ -1,7 +1,7 @@
 .about-modal__field {
   position: absolute;
   width: 90%;
-  height: 70%;
+  max-height: 95vh;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -20,17 +20,14 @@
 
   @media screen and(min-width:480px) {
     width: 500px;
-    height: 90%;
     padding-left: 30px;
     padding-right: 30px;
   }
   @media screen and(min-width:768px) {
     width: 500px;
-    height: 60%;
   }
   @media screen and(min-width:1280px) {
     width: 680px;
-    height: 50%;
   }
 }
 
