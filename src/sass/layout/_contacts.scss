@@ -1,6 +1,6 @@
 // фон и позиция фона + паддинги секции
 .contacts {
-  padding: 88px 0 158px;
+  padding: 48px 0 113px;
   margin: 0 auto;
   background-color: var(--bg-section);
   background-repeat: no-repeat;
@@ -15,6 +15,8 @@
   }
 
   @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding: 69px 0 158px;
+
     background: linear-gradient(
       to bottom,
       var(--color-design-white) 197px,
@@ -23,19 +25,33 @@
   }
 
   @media screen and (min-width: 1280px) {
+    padding: 92px 0 165px;
+
     @media screen and (min-device-pixel-ratio: 1),
       screen and (min-resolution: 96dpi),
       screen and (min-resolution: 1dppx) {
-      background-image: url('../images/contacts_background/section_background.png');
+      background-image: url('../images/contacts_background/section_background.png'),
+        linear-gradient(
+          to bottom,
+          var(--color-design-white) 230px,
+          var(--bg-section) 230px
+        );
     }
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: url('../images/contacts_background/section_background@2x.png');
+      background-image: url('../images/contacts_background/section_background@2x.png'),
+        linear-gradient(
+          to bottom,
+          var(--color-design-white) 230px,
+          var(--bg-section) 230px
+        );
 
-      //   ограничение нужно чтобы не растягивалось до размера 2х и не менялось положение точек при разширении экрана
-      background-size: 1920px 384px;
+      //   ограничение нужно чтобы не растягивалось до размера 2х и не менялось положение точек при разширении экрана,
+      //   плюс чтобы белый фон на всю секцию, а не только на ширину ориг изображения
+      background-size: 1920px 384px, auto;
+      background-position: center center, center top;
     }
   }
 }
@@ -222,12 +238,10 @@
   }
 }
 
-.btn {
+.contacts__button.btn {
   &-dark,
   &-light {
     font-size: 16px;
-    display: flex;
-    align-items: center;
     justify-content: center;
     border-radius: 22px;
     width: 161px;
@@ -238,13 +252,6 @@
 
   &-dark {
     fill: var(--bg-btn-light);
-
-    &:hover,
-    &:focus {
-      fill: var(--bg-btn-light-hover);
-      color: var(--bg-btn-light-hover);
-      background: var(--bg-btn-dark-hover);
-    }
 
     @media screen and (min-width: 768px) {
       padding: 0 34px;
@@ -259,13 +266,6 @@
 
   &-light {
     fill: var(--bg-btn-dark);
-
-    &:hover,
-    &:focus {
-      fill: var(--bg-btn-dark-hover);
-      color: var(--bg-btn-dark-hover);
-      background: var(--bg-btn-light-hover);
-    }
 
     @media screen and (min-width: 768px) {
       padding: 0 41px;
