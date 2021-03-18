@@ -26,34 +26,7 @@
     width: 50%;
   }
 }
-.modal-close-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-left: auto;
-  margin-bottom: 5px;
 
-  width: 30px;
-  height: 30px;
-  border-color: transparent;
-  border-radius: 50%;
-  background-color: var(--color-design-white);
-  transition: background-color 250ms linear;
-
-  &:hover,
-  &:focus {
-    background-color: var(--bg-btn-dark);
-  }
-}
-.modal-close-btn__icon {
-  fill: var(--bg-btn-dark);
-  transition: fill 250ms linear;
-
-  .modal-close-btn:hover &,
-  .modal-close-btn:focus & {
-    fill: var(--bg-btn-light);
-  }
-}
 .modal__title.section-subtitle {
   position: relative;
   color: var(--color-design-main);
