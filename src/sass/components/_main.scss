@@ -1,0 +1,27 @@
+/* === Buttons styles === */
+@import './buttons';
+
+/* === Section title styles === */
+@import './section-title';
+
+/* === Section subtitle styles === */
+@import './section-subtitle';
+
+/* === burger styles === */
+@import './flip-btn';
+
+/* === backdrop styles === */
+@import './backdrop';
+
+/* === Is-hidden style === */
+@import './utils/is-hidden';
+
+/* === about-modal === */
+@import './about-modal';
+
+// contacts - modal - map and franchise
+@import './contacts-modal-map';
+@import './contacts_modal-franchise';
+
+/* === Modal close button style === */
+@import './modal-close-btn';
